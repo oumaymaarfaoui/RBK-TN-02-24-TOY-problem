@@ -10,5 +10,11 @@
  * @returns {String}
  */
 const firstNonRepeatedCharacter = function (string) {
-  // TODO: your solution here
+  for(var i=0; i<string.length; i++) {
+    if(string.indexOf(string[i])===string.lastIndexOf(string[i])) {
+      return string[i]
+    }
+  }
+  return null
 }
+
